@@ -1,0 +1,18 @@
+{
+  "short_name": "AETHEL LABS",
+  "name": "AETHEL COGNITIVE LABS | AI Decision & Intelligence Laboratory",
+  "description": "Turn multiple AI perspectives into structured intelligence. See Every Perspective. Think Beyond One Model.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#050814",
+  "theme_color": "#050814",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "research", "utilities", "ai"]
+}
