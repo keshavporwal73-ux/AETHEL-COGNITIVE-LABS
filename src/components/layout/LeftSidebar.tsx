@@ -332,6 +332,45 @@ export const LeftSidebar: React.FC<LeftSidebarProps> = ({
 
           <div className="space-y-0.5 mt-0.5">
             <button
+              onClick={() => handleModeSelect('quantummindmap')}
+              className={`w-full flex items-center gap-2.5 px-2.5 py-1.5 rounded-md text-xs font-medium transition-colors ${
+                activeMode === 'quantummindmap' 
+                  ? 'bg-sidebar-accent text-sidebar-accent-foreground font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground hover:bg-sidebar-accent/50'
+              }`}
+            >
+              <Network className="w-3.5 h-3.5 text-cyan-400" />
+              <span>Quantum Mind Map</span>
+              <span className="ml-auto text-[10px] font-mono text-cyan-400 bg-cyan-950/50 px-1 rounded">NEW</span>
+            </button>
+
+            <button
+              onClick={() => handleModeSelect('personachat')}
+              className={`w-full flex items-center gap-2.5 px-2.5 py-1.5 rounded-md text-xs font-medium transition-colors ${
+                activeMode === 'personachat' 
+                  ? 'bg-sidebar-accent text-sidebar-accent-foreground font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground hover:bg-sidebar-accent/50'
+              }`}
+            >
+              <Users className="w-3.5 h-3.5 text-violet-400" />
+              <span>Persona Chat Panel</span>
+              <span className="ml-auto text-[10px] font-mono text-violet-400 bg-violet-950/50 px-1 rounded">NEW</span>
+            </button>
+
+            <button
+              onClick={() => handleModeSelect('temporaltrack')}
+              className={`w-full flex items-center gap-2.5 px-2.5 py-1.5 rounded-md text-xs font-medium transition-colors ${
+                activeMode === 'temporaltrack' 
+                  ? 'bg-sidebar-accent text-sidebar-accent-foreground font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground hover:bg-sidebar-accent/50'
+              }`}
+            >
+              <Zap className="w-3.5 h-3.5 text-amber-400" />
+              <span>Temporal Tracker</span>
+              <span className="ml-auto text-[10px] font-mono text-amber-400 bg-amber-950/50 px-1 rounded">NEW</span>
+            </button>
+
+            <button
               onClick={() => handleModeSelect('arena')}
               className={`w-full flex items-center gap-2.5 px-2.5 py-1.5 rounded-md text-xs font-medium transition-colors ${
                 activeMode === 'arena' 

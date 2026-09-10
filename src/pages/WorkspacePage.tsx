@@ -29,6 +29,9 @@ import { ArenaView } from '@/components/views/ArenaView';
 import { PromptMatrixView } from '@/components/views/PromptMatrixView';
 import { ExecutiveBriefingView } from '@/components/views/ExecutiveBriefingView';
 import { TelemetryView } from '@/components/views/TelemetryView';
+import { QuantumMindMapView } from '@/components/views/QuantumMindMapView';
+import { AiPersonaChatView } from '@/components/views/AiPersonaChatView';
+import { TemporalTrackerView } from '@/components/views/TemporalTrackerView';
 import { CollaborateModal } from '@/components/modals/CollaborateModal';
 import { WorkflowStepper } from '@/components/common/WorkflowStepper';
 import { ModelHubModal } from '@/components/modals/ModelHubModal';
@@ -125,6 +128,9 @@ export const WorkspacePage: React.FC = () => {
               {activeMode === 'matrix' && <PromptMatrixView />}
               {activeMode === 'briefing' && <ExecutiveBriefingView />}
               {activeMode === 'telemetry' && <TelemetryView />}
+              {activeMode === 'quantummindmap' && <QuantumMindMapView />}
+              {activeMode === 'personachat' && <AiPersonaChatView />}
+              {activeMode === 'temporaltrack' && <TemporalTrackerView />}
             </div>
           </div>
 

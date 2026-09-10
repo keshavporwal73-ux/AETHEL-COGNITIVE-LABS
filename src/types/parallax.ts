@@ -18,7 +18,10 @@ export type WorkspaceMode =
   | 'arena'
   | 'briefing'
   | 'matrix'
-  | 'telemetry';
+  | 'telemetry'
+  | 'quantummindmap'
+  | 'personachat'
+  | 'temporaltrack';
 
 export type IntelligenceStage = 
   | 'question'
